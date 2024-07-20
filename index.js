@@ -3,14 +3,14 @@ connectToMongo();
 
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 5000
 
 app.use(express.json())
 
 //Available Routes
-// app.get('/', (req, res) => {
-//   res.send('Hello World!')
-// })
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 // app.get('/vi/vi', (req, res) => {         //Can create different Endpoints-- instead we make folder structure, that helps to maintain large projects
 //   res.send('vi 2')
 // })
